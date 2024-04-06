@@ -1,9 +1,11 @@
 {
   "name": "w18-social-network",
   "version": "1.0.0",
-  "description": "A social network API utilizing MongoDB",
+  "description": "A social network API utilizing NoSQL",
   "main": "index.js",
   "scripts": {
+    "seed": "node seeds/seed.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
