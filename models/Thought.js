@@ -3,7 +3,7 @@ const mongoose        = require('mongoose');
 const {Schema, Types} = require('mongoose');
 
 // Define the schema for a 'Theme'
-const themeSchema = new Schema(
+const thoughtSchema = new Schema(
 	{
 		// A required 'thoughtText' field with a maximum length of 280 characters and a minimum length of 1
 		thoughtText: {
@@ -29,13 +29,12 @@ const themeSchema = new Schema(
 		}
 	},
 	{
-
 		// Include the 'reactionCount' virtual field, and getter functions
 		toJSON: {virtuals: true, getters: true}
 	});
 
 // Define a virtual field 'reactionCount' that returns the count of reactions
-themeSchema.virtual('reactionCount').get(function () {
+thoughtSchema.virtual('reactionCount').get(function () {
 	return this.reactions.length;
 });
 
@@ -46,4 +45,4 @@ function dateFormat(timestamp) {
 }
 
 // Export the Theme model
-module.exports = mongoose.model('Theme', themeSchema);
+module.exports = mongoose.model('Theme', thoughtSchema);
