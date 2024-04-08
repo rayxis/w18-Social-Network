@@ -21,9 +21,9 @@ const userSchema = new Schema(
 			unique:   true
 		},
 		// 'thoughts' is an array of ObjectId's originating from the 'Thoughts' model
-		thoughts:     [{type: Schema.Types.ObjectId, ref: 'Thoughts'}],
+		thoughts:     [{type: Schema.Types.ObjectId, ref: 'Thought'}],
 		// 'friends' is an array of ObjectId's originating from the 'Users' model
-		friends:      [{type: Schema.Types.ObjectId, ref: 'Users'}]
+		friends:      [{type: Schema.Types.ObjectId, ref: 'User'}]
 	},
 	{
 		// Include the 'friendCount' virtual field defined below

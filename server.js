@@ -6,10 +6,10 @@ const routes  = require('./routes');
 const PORT = process.env.PORT || 3000;
 
 // Database management
-const db      = require('./config/mongoose');
+const db = require('./config/mongoose');
 
 // Instantiate and configure Express
-const app        = express();
+const app = express();
 // Use sessions, parse JSON, serve static files and include routes.
 app.use(express.urlencoded({extended: true}))
    .use(express.json())
