@@ -9,7 +9,7 @@ const db = {
 };
 
 // Establish a connection to the MongoDB.
-await connect(`mongodb://${db.host}:${db.port}/${db.name}`);
+connect(`mongodb://${db.host}:${db.port}/${db.name}`);
 
 // Export the 'connection' object.
 module.exports = {

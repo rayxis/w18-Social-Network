@@ -1,7 +1,7 @@
 // Import the Reactions, Thoughts, and Users schemas 
-const Reactions = require('./Reaction');
-const Thoughts  = require('./Thought');
-const Users     = require('./User');
+const Reaction = require('./Reaction');
+const Thought  = require('./Thought');
+const User     = require('./User');
 
 // Export these schemas
-module.exports = {Reactions, Thoughts, Users};
+module.exports = {Reaction, Thought, User};
