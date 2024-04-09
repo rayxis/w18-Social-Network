@@ -1,18 +1,26 @@
 # w18-Social-Network
+
 A social network plugin utilizing NoSQL
 
 ## Description
 
-## Features
+This project is a social network web application running as a server-side API to keep track of users, their thoughts 
+and reactions.
 
 ## Installation
 
+Firstly, please ensure that you extract this API application in a directory where you have the required permissions. The
+prerequisites for installation include having Node.js and MongoDB installed and configured on your machine.
+
+Once that is accomplished, simply execute `npm install` to install the necessary dependencies. After successful
+installation, you can initialize the application by typing `npm start`. This streamlined process involves no special or
+extraordinary steps, making it user-friendly and straightforward to get the application up and running.
+
 ## Usage
 
-A video demonstration can be seen here: 
 
-### Execution
 
+A video demonstration can be seen here:
 
 ## User Story
 
@@ -36,8 +44,6 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-## Screenshots
-
 ## Future Development
 
-## Credits
+In the future, I would like to take the time to 
